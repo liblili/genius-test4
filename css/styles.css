@@ -1,0 +1,540 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+:root {
+  --color-primery-dark: #31261a;
+  --color-primery-wite: #faf4ea;
+  --color-primery-kaki: #819b57;
+  --color-brend-kaki: #465929;
+  --color-brend-wite: #cfcfbc;
+  --color-brend-beg: #a18268;
+
+}
+/*base*/
+body {
+  color: var(--color-primery-dark);
+  background-color: var(--color-primery-wite);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18 px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/*header*/
+.header-containair {
+  display: flex;
+  align-items: center;
+  gap: 40 px;
+}
+.header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding-top: 32px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40 px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/*body*/
+.section {
+  padding: 48px 0;
+}
+.container {
+  max-width: 1288px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/*button*/
+.button {
+  padding: 16px 32px;
+  background: var(--color-brend-kaki);
+  color: var(--color-brend-wite);
+  border-radius: 8px;
+  border: 2px solid var(--color-brend);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: transparent;
+  color: var(--bakery-landing-13, #465929);
+}
+/*link*/
+
+.link {
+  color: var(--color-primery-wite);
+  text-decoration: none;
+  transition: color .3s;
+}
+.link:hover {
+  color: var(--color-brend);
+}
+
+.hero-section {
+  padding: 272px 0;
+  background-image: linear-gradient(103deg, 
+  rgba(18, 18, 17, 0.78) 2.03%, 
+  rgba(18, 18, 17, 0.60) 58.46%, 
+  rgba(18, 18, 17, 0.00) 90.36%),
+  url(../images/cuple-in-baykery.jpg);
+  background-repeat: no-repeat; 
+  background-position: center top;
+  background-size: cover;
+  }
+
+.hero-title {
+  color: var(--color-primery-wite);
+  font-family: Poppins;
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.hero-title .accent {
+  color: var(--color-primery-kaki);
+ }
+
+/*advantages-section*/
+.advantages-section {
+  background-color: var(--color-brend-kaki);
+  padding: 16px 0;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between; /*растягивает єлементи по щирине автоматич. расчит. расст. меджу ними*/
+
+  gap: 40px; /*добавляет место чтоб єлементі не слипались*/
+
+  color: var(--color-primery-wite);
+  background-color: var(--color-brend);
+}
+/* styl li*/
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-title {
+  color: #31261a;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+.section-title.centered {
+ text-align: center;
+}
+
+/*tradition section  p shop bacery*/
+.tradition-section {
+  padding-top: 96px;
+}
+.tradition-container {
+  display: flex; /*elementi v riadok*/
+  justify-content: space-between;
+  gap: 40px;
+}
+.tradition-title {
+  margin-bottom: 42px;
+}
+.tradition-content {
+  max-width: 710px;
+}
+
+.tradition-text span {
+  text-transform: uppercase;
+  color: var(--color-primery-kaki);
+  font-weight: 600;
+}
+.tradition-text:last-child {
+  max-width: 360px; /*abo tak abo z tegom br*/
+}
+
+/*vlad nasta*/
+.shef-title {
+  font-size: 40 px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  
+}
+.accent {
+ color: var(--color-brend-kaki);}
+
+.chefs-list{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 40px 30px;
+}
+.chef-text p:
+{
+ margin-bottom: 24px;}
+.chef-text p:last-child
+{
+ margin-bottom: 0;
+}
+.chefs-item{
+ flex-basis: calc((100% - 30px)/ 2); 
+}
+.chef-card{
+ display: flex;
+ gap: 30px;
+}
+.shefs-title {
+  margin: 0 auto 80px;
+  position: relative;
+}
+.shefs-title::before, 
+.shefs-title::after {
+  position: absolute;
+  bottom: 24px;
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brend-wite);
+  content: "";
+}
+.shefs-title::before{
+ left: 0;
+ 
+}
+.shefs-title::after{
+ right: 0;
+ 
+}
+
+.chef-images {border-radius: 4px 4px 4px 200px;
+box-shadow: -16px 16px 0 0 var(--color-primery-wite), -16px 16px 0 2px var(--color-brend-beg); 
+}
+
+
+/* -замрвити дщвінок */
+.formatss-conteinair{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+}
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.format-title {
+  font-size: 24 px;
+  font-weight: 600;
+   margin-bottom: 80px;
+}
+.formats-title{
+
+   margin-bottom: 80px;
+}
+.formats-item {
+  flex-basis: calc((100% - 40px)/ 3); /*комп сом рассчитает щирину єкрана и поделит на 3гєп 40пикселей*/. минус 
+}
+.format-card {
+  border: 1px solid lawngreen;
+  border-radius: 16px;
+  padding: 24px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+  height:444px ;
+ transition: transform .3s;
+}
+.format-card:hover {
+  transform: scale(1.05);
+  
+}
+
+.formats-text {
+  font-size: 14 px;
+  font-weight: 300;
+}
+/*carousel*/
+.carousel-button{
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: var(--color-brend-wite);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primery-dark);  
+}
+.carousel-button.next{ 
+  transform: rotate(180deg);
+  
+}
+
+.carousel-button:hover{ 
+  background-color: var(--color-primery-dark);
+  fill: var(--color-primery-dark);
+}
+/* contact*/
+.contact-section{
+  padding-bottom: 96px;
+}
+
+.contact-conteinair{
+  display: flex;
+  gap: 32px;
+}
+.contact-map{
+  flex-shrink: 0;
+}
+
+/* cdass footer*/
+.footer-conteinair{
+  display: flex;
+  gap: 20px;
+}
+.footer-nav, .footer-adress{
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+
+.footer-logo, .footer-menu {
+flex-grow: 1;
+}
+
+
+.footer{
+  background-image: url("../images/footer-bcg.png");
+  background-color: var(--color-primery-dark);
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  position: relative;
+}
+.footer::before{
+
+  content: " ";
+  background-image: url("../images/bread-small.png");
+  width: 180px;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  
+}
+.footer::after{
+
+  content: " ";
+  background-image: url("../images/bred-big.png");
+   width: 380px;
+  height: 190px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  
+}
+
+.adress-list, .adress-info{
+  flex-grow: 1;
+}
+
+.contact-title {
+  margin-bottom: 16 px;
+}
+.adres-link {
+  color: var(--color-brend-wite);
+  font-size: 16 px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.adres-link:hover {
+  color: var(--color-primery-kaki);
+  font-size: 16 px;
+  font-weight: 300;
+}
+.adress-icon{
+  fill: var(--color-brend-wite); /*fill-colir zalivka, stroke-obvodka dlia svg-image*/
+}
+.adres-copiright {
+  font-size: 14 px;
+}
+/*modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  transition: opacity .3s, visibility 0.3s; /*0.3 = .3*/
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+ height: 100%;
+ height: 880px;
+ width: 100%;
+ width: 880px;
+ background-color: var(--color-primery-wite);
+ border-radius: 32px;
+ position: relative;
+ padding: 128px;
+ overflow-y: auto;
+}
+.modal-btn-close{
+ position: absolute;
+ top: 40px;
+ right: 40px;
+}
+.backdrop.is-hidden{
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
+/*form*/
+.forme-field{
+margin-bottom: 32px;
+position: relative;
+}
+.forme-label{
+/*display: block;- стало непотрібним т к роз абсолют делает єл блоковим*/
+position: absolute;
+top: 16px;
+left: 42px;
+font-size: 16px;
+line-height: 1.17;
+transition-duration: 0.3s;
+color:  var(--color-brend-beg);
+}
+.forme-input:focus + .forme-label{
+transform: translate(-36px, -40px);}
+.forme-input{
+padding: 16px 42px;
+width: 100%;
+border: 1px solid var(--color-brend-beg);
+border-radius: 8px;
+background-color: transparent;
+}
+.forme-input:focus{
+  border-color:  var(--color-brend-kaki);
+  outline: none;
+}
+.forme-input::placeholder{
+ color: var(--color-brend-beg);
+}
+.forme-button{
+ display: block;
+ margin: 0 auto 24px;
+}
+ .button[disabled] { 
+  color: #920808;
+  background-color: #a18268;
+  } /*esli est atribut u button v html*/
+.forme-terms{
+  max-width: 220px;
+font-size: 12px;
+line-height: 1.5;
+font-weight: 500;
+text-align: center;
+margin: 0 auto;
+}
+.forme-terms-link{
+  color: var(--color-primery-dark);
+  text-underline-offset: 2px;
+}
+/*.checkbox-input:checked + .checkbox-lebel::before {
+  background-color: var(--color-brend-kaki);
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-lebel::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  content: "";
+  border: 1px solid var(--color-brend-kaki);
+  top: 0;
+  left: -25px;
+  margin-top: 5px;
+}
+.checkbox-lebel: {
+  padding-left: 24px;
+
+}
+.checkbox {
+  position: relative;
+  
+}*/
+
+
+
+
